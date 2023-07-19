@@ -18,12 +18,12 @@ function App() {
       }
 
       if (window.scrollY !== 0) setIsTopOfPage(false);
+    };
     
-      window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
-  }, [])
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="app bg-gray-20">
@@ -37,6 +37,6 @@ function App() {
       <OurClasses setSelectedPage={setSelectedPage} />
     </div>
   )
-}
+};
 
 export default App;
