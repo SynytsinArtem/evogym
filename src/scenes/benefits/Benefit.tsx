@@ -1,7 +1,7 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { motion } from 'framer-motion';
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { motion } from "framer-motion";
 
-import { SelectedPage } from '@/shared/types';
+import { SelectedPage } from "@/shared/types";
 
 const childVariant = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -36,7 +36,7 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
         <p>Learn More</p>
       </AnchorLink>
     </motion.div>
-  )
+  );
 };
 
 export default Benefit;

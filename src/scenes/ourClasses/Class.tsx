@@ -1,5 +1,3 @@
-import React from 'react';
-
 type Props = {
   name: string;
   description?: string;
@@ -18,7 +16,7 @@ const Class = ({ name, description, image }: Props) => {
       </div>
       <img src={image} alt={`${image}`} />
     </li>
-  )
+  );
 };
 
 export default Class;

@@ -23,7 +23,7 @@ const Link = ({
     >
       {page}
     </AnchorLink>
-  )
+  );
 };
 
 export default Link;

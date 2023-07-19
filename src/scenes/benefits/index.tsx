@@ -24,7 +24,7 @@ const benefits: Array<BenefitType> = [
     description: "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
   },
   {
-    icon: <HomeModernIcon className="h-6 w-6" />,
+    icon: <AcademicCapIcon className="h-6 w-6" />,
     title: "Expert and Pro Trainers",
     description: "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
   },
@@ -155,7 +155,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         </div>
       </motion.div>
     </section>
-  )
+  );
 };
 
 export default Benefits;

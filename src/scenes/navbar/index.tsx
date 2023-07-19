@@ -102,7 +102,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         </div>
       )}
     </nav>
-  )
+  );
 };
 
 export default Navbar;

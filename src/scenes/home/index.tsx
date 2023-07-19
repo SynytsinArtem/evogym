@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
@@ -8,7 +9,6 @@ import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -52,7 +52,6 @@ const Home = ({ setSelectedPage }: Props) => {
               Body Now.
             </p>
           </motion.div>
-          
           {/* ACTIONS */}
           <motion.div
             className="mt-8 flex items-center gap-8"
@@ -77,13 +76,11 @@ const Home = ({ setSelectedPage }: Props) => {
             </AnchorLink>
           </motion.div>
         </div>
-
         {/* IMAGE */}
         <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
           <img src={HomePageGraphic} alt="home-pageGraphic" />
         </div>
       </motion.div>
-
       {/* SPONSORS */}
       {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
@@ -97,7 +94,7 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
       )}
     </section>
-  )
+  );
 };
 
 export default Home;
