@@ -31,30 +31,40 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </a>
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
-                <div className={`${flexBetween} gap-8 text-sm`}>
-                  <Link
-                    page="Home"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Benefits"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Our Classes"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                  <Link
-                    page="Contact Us"
-                    selectedPage={selectedPage}
-                    setSelectedPage={setSelectedPage}
-                  />
-                </div>
+                <nav>
+                  <ul className={`${flexBetween} gap-8 text-sm`}>
+                    <li className="transition duration-500 hover:text-primary-300">
+                      <Link
+                        page="Home"
+                        selectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
+                      />
+                    </li>
+                    <li className="transition duration-500 hover:text-primary-300">
+                      <Link
+                        page="Benefits"
+                        selectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
+                      />
+                    </li>
+                    <li className="transition duration-500 hover:text-primary-300">
+                      <Link
+                        page="Our Classes"
+                        selectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
+                      />
+                    </li>
+                    <li className="transition duration-500 hover:text-primary-300">
+                      <Link
+                        page="Contact Us"
+                        selectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
+                      />
+                    </li>
+                  </ul>
+                </nav>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  <a href="#">Sign In</a>
                   <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
                 </div>
               </div>
@@ -79,27 +89,39 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </button>
           </div>
           {/* MENU ITEMS */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-            <Link
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Benefits"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Our Classes"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Contact Us"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
+          <div>
+            <nav>
+              <ul className="ml-[33%] flex flex-col gap-10 text-2xl">
+                <li className="transition duration-500 hover:text-primary-300">
+                  <Link
+                    page="Home"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                </li>
+                <li className="transition duration-500 hover:text-primary-300">
+                  <Link
+                    page="Benefits"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                </li>
+                <li className="transition duration-500 hover:text-primary-300">
+                  <Link
+                    page="Our Classes"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                </li>
+                <li className="transition duration-500 hover:text-primary-300">
+                  <Link
+                    page="Contact Us"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       )}
