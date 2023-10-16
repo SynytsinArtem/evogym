@@ -15,14 +15,14 @@ const Footer = () => {
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Links</h4>
-          <p className="my-5">Massa orci senectus</p>
-          <p className="my-5">Et gravida id et etiam</p>
-          <p>Ullamcorper vivamus</p>
+          <a className="my-5 block duration-500 hover:text-primary-300" href="#">Massa orci senectus</a>
+          <a className="my-5 block duration-500 hover:text-primary-300" href="#">Et gravida id et etiam</a>
+          <a className="duration-500 hover:text-primary-300" href="#">Ullamcorper vivamus</a>
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Contact Us</h4>
-          <p className="my-5">Tempus metus mattis risus volutpat egesta.</p>
-          <p>(333)425-6825</p>
+          <a className="my-5 block duration-500 hover:text-primary-300" href="#">Tempus metus mattis risus volutpat egesta.</a>
+          <a className="block duration-500 hover:text-primary-300" href="#">(333)425-6825</a>
         </div>
       </div>
     </footer>
